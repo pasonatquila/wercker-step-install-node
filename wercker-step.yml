@@ -1,0 +1,14 @@
+name: node-install
+version: 0.0.1
+
+description: Step to install Node.js & NPM
+keywords:
+  - install
+  - node
+  - npm
+
+properties:
+  version:
+    type: string
+    required: false
+    default: 6.9.4
