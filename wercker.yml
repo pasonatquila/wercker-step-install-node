@@ -1,0 +1,18 @@
+box: wercker/default
+
+dev:
+  box: debian:jessie
+  steps:
+    - install-packages:
+        packages: wget
+
+    - script:
+        name: Execute run.sh script
+        code: WERCKER_NODE_INSTALL_VERSION=6.9.4 sh run.sh
+
+    - internal/shell:
+        cmd: bash
+
+build:
+  steps:
+    - shellcheck
