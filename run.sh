@@ -1,7 +1,7 @@
 #!/bin/sh
 # Copyright (C) 2017 BigTrueData
 
-set -e
+set -ex
 
 version=$WERCKER_NODE_INSTALL_VERSION
 
