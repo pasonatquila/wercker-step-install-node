@@ -1,6 +1,6 @@
 # Step node-install
 
-Some utilities require Node.js or NPM to perform some development or build tasks. This steps install Node.js and NPM in the container used in the running pipeline.
+Some utilities require Node.js or NPM to perform some development or build tasks. This steps install Node.js and NPM in the running pipeline container.
 
 **NOTE**: the `wget` utility is required to allow this step to succesfully install Node.js and NPM.
 
