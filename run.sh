@@ -10,5 +10,3 @@ url="https://nodejs.org/dist/v${version}/${tarball}"
 
 wget -O- "${url}" | tar xzf - -C /usr/local --strip-components=1
 ln -s /usr/local/bin/node /usr/local/bin/nodejs
-
-exit 0
