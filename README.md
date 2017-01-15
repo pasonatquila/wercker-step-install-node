@@ -15,7 +15,6 @@ The following example installs default configured version fo the node package. C
 build:
   steps:
     - bigtruedata/node-install:
-        version: 7.4.0
 ```
 
 The following example installs the `7.4.0` version of the node package:
