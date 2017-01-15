@@ -1,6 +1,6 @@
 # Step node-install
 
-Some utilities require Node.js or NPM to perform some development or build tasks. This steps install Node.js and NPM in the running pipeline container.
+Some utilities require Node.js or NPM to perform some development or build tasks. The main purpose of this steps install Node.js and NPM in the running pipeline container to provide the utilities required for development and build tasks on frontend applications such as stylesheet compilation, javascript minification, and so.
 
 **NOTE**: the `wget` utility is required to allow this step to succesfully install Node.js and NPM.
 
@@ -31,7 +31,11 @@ The MIT License (MIT)
 
 # Changelog
 
+## 1.1.0
+
+- Corrected the `run.sh` script
+
 ## 1.0.0
 
-- Initial release
+- Initial release (this version should not be used due to an error on run.sh)
 
