@@ -4,6 +4,8 @@ Some utilities require Node.js or NPM to perform some development or build tasks
 
 **NOTE**: the `wget` utility is required to allow this step to succesfully install Node.js and NPM.
 
+[![wercker status](https://app.wercker.com/status/6dc33cd3915a510d486e677c6227e495/s/master "wercker status")](https://app.wercker.com/project/bykey/6dc33cd3915a510d486e677c6227e495)
+
 # Options
 
 - `version` The version number of the Node.js package to install. By devault the value `6.9.4` is used for this option.
