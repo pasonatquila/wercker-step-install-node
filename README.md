@@ -1,6 +1,6 @@
-# Step node-install
+# Step install-node
 
-Some utilities require Node.js or NPM to perform some development or build tasks. The main purpose of this steps install Node.js and NPM in the running pipeline container to provide the utilities required for development and build tasks on frontend applications such as stylesheet compilation, javascript minification, and so.
+Some utilities require Node.js or NPM to perform some development or build tasks. The main purpose of this steps install Node.js and NPM in the running pipeline container to provide the utilities needed for development and build tasks on frontend applications such as stylesheet compilation, javascript minification, and so.
 
 **NOTE**: the `wget` utility is required to allow this step to succesfully install Node.js and NPM.
 
@@ -16,15 +16,22 @@ The following example installs default configured version fo the node package. C
 ```yaml
 build:
   steps:
-    - bigtruedata/node-install:
+    - bigtruedata/install-node:
 ```
 
 The following example installs the `7.4.0` version of the node package:
 ```yaml
 build:
   steps:
-    - bigtruedata/node-install:
+    - bigtruedata/install-node:
         version: 7.4.0
+```
+
+# Development
+
+During step development some environment variables are used. They are defined in a file called `wercker.env`. To make them available during the development pipeline, the `wercker` command should be executed with the `--environment <file>` option as follows:
+```sh
+$ wercker --environment --wercker.env dev
 ```
 
 # License
@@ -32,6 +39,11 @@ build:
 The MIT License (MIT)
 
 # Changelog
+
+## 2.0.0
+
+- The code was improved
+- The step was renamed from `node-install` to `install-node`
 
 ## 1.1.0
 
