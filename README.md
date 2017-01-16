@@ -40,6 +40,10 @@ The MIT License (MIT)
 
 # Changelog
 
+## 2.0.1
+
+- Corrected some little errors on `run.sh` script
+
 ## 2.0.0
 
 - The code was improved
