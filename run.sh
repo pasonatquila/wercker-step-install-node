@@ -3,10 +3,14 @@
 
 set -e
 
-version=$WERCKER_NODE_INSTALL_VERSION
+main() {
+  local version=$WERCKER_NODE_INSTALL_VERSION
+  local tarball="node-v${version}-linux-x64.tar.gz"
 
-tarball="node-v${version}-linux-x64.tar.gz"
-url="https://nodejs.org/dist/v${version}/${tarball}"
+  wget -O- "https://nodejs.org/dist/v${version}/${tarball}" \\
+  | tar xzf - -C /usr/local --strip-components=1
 
-wget -O- "${url}" | tar xzf - -C /usr/local --strip-components=1
-ln -s /usr/local/bin/node /usr/local/bin/nodejs
+  ln -s /usr/local/bin/node /usr/local/bin/nodejs
+}
+
+main
