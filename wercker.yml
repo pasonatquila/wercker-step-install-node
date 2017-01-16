@@ -11,7 +11,6 @@ dev:
     - script:
         name: Execute run.sh script
         code: |
-          export WERCKER_NODE_INSTALL_VERSION=6.9.4
           sh run.sh
 
     - internal/shell:
