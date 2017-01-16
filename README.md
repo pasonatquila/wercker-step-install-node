@@ -40,24 +40,18 @@ The MIT License (MIT)
 
 # Changelog
 
+## 2.0.3
+
+- Corrected the version environment variable
+
 ## 2.0.2
 
 - Some minor modifications on `run.sh` to simplify the script
+
+**NOTE**: This version should nor be used due to an error on `run.sh` script.
 
 ## 2.0.1
 
 - Corrected some little errors on `run.sh` script
 
-## 2.0.0
-
-- The code was improved
-- The step was renamed from `node-install` to `install-node`
-
-## 1.1.0
-
-- Corrected the `run.sh` script
-
-## 1.0.0
-
-- Initial release (this version should not be used due to an error on run.sh)
-
+**NOTE**: This version should nor be used due to an error on `run.sh` script.
