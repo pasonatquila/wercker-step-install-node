@@ -1,5 +1,5 @@
-name: node-install
-version: 1.1.0
+name: install-node
+version: 2.0.0
 
 description: Step to install Node.js & NPM
 keywords:
