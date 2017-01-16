@@ -1,7 +1,7 @@
 name: install-node
 version: 2.0.0
 
-description: Step to install Node.js & NPM
+description: Install Node.js & NPM in the current pipeline
 keywords:
   - install
   - node
