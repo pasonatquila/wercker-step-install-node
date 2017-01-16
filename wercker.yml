@@ -3,10 +3,10 @@ box: wercker/default
 dev:
   box: debian:jessie
   steps:
+    - shellcheck
+
     - install-packages:
         packages: wget
-
-    - shellcheck
 
     - script:
         name: Execute run.sh script
