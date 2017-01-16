@@ -3,7 +3,7 @@
 
 set -e
 
-version=$WERCKER_NODE_INSTALL_VERSION
+version=$WERCKER_INSTALL_NODE_VERSION
 tarball="node-v${version}-linux-x64.tar.gz"
 
 wget -O- "https://nodejs.org/dist/v${version}/${tarball}" \
