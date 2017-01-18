@@ -2,7 +2,7 @@
 
 Some utilities require Node.js or NPM to perform some development or build tasks. The main purpose of this steps install Node.js and NPM in the running pipeline container to provide the utilities needed for development and build tasks on frontend applications such as stylesheet compilation, javascript minification, and so.
 
-**NOTE**: the `wget` utility is required to allow this step to succesfully install Node.js and NPM.
+**NOTE**: the `wget` or the `curl` commands should be available to sucessfully install the node version.
 
 [![wercker status](https://app.wercker.com/status/4c5942c109137c8ceec40f5c4be74d77/m "wercker status")](https://app.wercker.com/project/bykey/4c5942c109137c8ceec40f5c4be74d77)
 
@@ -39,6 +39,10 @@ $ wercker --environment --wercker.env dev
 The MIT License (MIT)
 
 # Changelog
+
+## 2.1.0
+
+- Updated the source download command to allow `curl` and `wget`
 
 ## 2.0.3
 
