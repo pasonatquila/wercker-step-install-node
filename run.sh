@@ -8,11 +8,11 @@ tarball="node-v${version}-linux-x64.tar.gz"
 
 url="https://nodejs.org/dist/v${version}/${tarball}"
 
-if [ `which wget` ]; then
-  wget -O- $url
+if [ "$(which wget)" ]; then
+  wget -O- "$url"
 
-elif [ `which curl` ]; then
-  curl $url
+elif [ "$(which curl)" ]; then
+  curl "$url"
 
 else
   fail "Cannot find a command suitable to get the package"
