@@ -31,7 +31,7 @@ build:
 
 During step development some environment variables are used. They are defined in a file called `wercker.env`. To make them available during the development pipeline, the `wercker` command should be executed with the `--environment <file>` option as follows:
 ```sh
-$ wercker --environment --wercker.env dev
+$ wercker --environment wercker.env dev
 ```
 
 # License
