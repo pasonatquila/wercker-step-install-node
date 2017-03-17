@@ -40,6 +40,10 @@ The MIT License (MIT)
 
 # Changelog
 
+## 2.1.1
+
+- Fixed an error in an example.
+
 ## 2.1.0
 
 - Updated the source download command to allow `curl` and `wget`
