@@ -1,21 +1,5 @@
 box: wercker/default
 
-dev:
-  box: debian:jessie
-  steps:
-    - shellcheck
-
-    - install-packages:
-        packages: wget
-
-    - script:
-        name: Execute run.sh script
-        code: |
-          sh run.sh
-
-    - internal/shell:
-        cmd: bash
-
 build:
   steps:
     - shellcheck
