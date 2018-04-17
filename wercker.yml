@@ -19,3 +19,9 @@ dev:
 build:
   steps:
     - shellcheck
+
+publish:
+  steps:
+    - internal/publish-step:
+        owner: pasonatquila
+
